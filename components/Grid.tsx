@@ -9,20 +9,8 @@ const Grid = () => {
           <BentoGridItem
             id={item.id}
             key={i}
-            title={
-              // // Conditionally add FaArrowRight for id = 3
-              // item.id === 3 ? (
-              //   <>
-              //     {item.title} <FaArrowRight />
-              //   </>
-              // ) : (
-              //   item.title
-              // )
-              item.title
-            }
+            title={item.title}
             description={item.description}
-            // remove icon prop
-            // remove original classname condition
             className={item.className}
             img={item.img}
             imgClassName={item.imgClassName}
